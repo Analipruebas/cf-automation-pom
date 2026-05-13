@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/cicdPyrton.iml" filepath="$PROJECT_DIR$/.idea/cicdPyrton.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/cf-automation-pom.iml" filepath="$PROJECT_DIR$/.idea/cf-automation-pom.iml" />
+>>>>>>> 6986f91f0822c552b74b3a584cdec18f6252d335
     </modules>
   </component>
 </project>
