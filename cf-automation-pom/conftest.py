@@ -4,11 +4,21 @@ from utils.driver_factory import create_driver
 
 
 def pytest_addoption(parser):
-    parser.addoption(
-        "--headless",
-        action="store_true",
-        help="Ejecutar pruebas en modo headless (sin interfaz de usuario)"
-    )
+   # parser.addoption(
+    #    "--headless",
+    #    action="store_true",
+     #   help="Ejecutar pruebas en modo headless (sin interfaz de usuario)"
+    #)
+   try:
+       parser.addoption(
+           "--headless",
+           action="store_true",
+           default=False,
+           help="Ejecutar las pruebas en modo headless"
+       )
+   except ValueError:
+       # Si ya existe (por un plugin), Pytest simplemente continuará
+       pass
 
 @pytest.fixture
 def driver(request):
