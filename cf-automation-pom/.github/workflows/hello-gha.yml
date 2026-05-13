@@ -15,4 +15,4 @@ jobs:
 
       - name: Ejecutar script de Python
         # Corregido: eliminada la coma extra
-        run: python cf-automation-pom/hol_gh.py
+        run: python cf-automation-pom/hola_gh.py
